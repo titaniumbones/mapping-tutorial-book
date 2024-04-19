@@ -17,7 +17,6 @@ kernelspec:
 
 This interface should (I hope!) allow you to get started with Python and mapping.  There are many different ways to make maps in Python, and we will only explore one path today. In later work we may switch to a different framework, but most of the concepts will apply to other tools, even end-user tools like MapBox or StoryMaps. 
 
-(section-label)=
 ## Imports: Build your toolbox
 
 Python is the most widely-used prgramming language for scientific computing, and has a wide variety of tools for working with data. We get access to those tools by `import` ing them into our project. I won'texplain every one of these tools in this tutorial; imagine, in stead, that you have just started an apprenticeship at an auto mechanic shop.  There are many tools in the building, but you will only learn to use a few of them at first. 
@@ -54,3 +53,9 @@ sample_map = folium.Map(tiles='cartodbpositron',
 )
 sample_map
 ```
+
+This displays a map centred on Montreal, zoomed in to the approximate city boundaries, and using the much prettier `CartoDB Positron` "tileset" as a "base layer".  The base layer is the bottom-most layer of imagery on the map.  Everything else we add to the map will be placed on top of the base.
+
+In the next section, we'll begin to see why this is useful. 
+
+Meanwhile, feel free to switch to the executable environment by clicking on the button. 
