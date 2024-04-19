@@ -33,3 +33,4 @@ html:
 
 launch_buttons:
   notebook_interface: "jupyterlab"  # or "classic"
+  binderhub_url: "https://mybinder.org"  # The URL for your BinderHub (e.g., https://mybinder.org)  
