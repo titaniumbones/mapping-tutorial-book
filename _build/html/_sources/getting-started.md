@@ -58,4 +58,4 @@ This displays a map centred on Montreal, zoomed in to the approximate city bound
 
 In the next section, we'll begin to see why this is useful. 
 
-Meanwhile, feel free to switch to the executable environment by clicking on the button. 
+Meanwhile, feel free to switch to the executable environment by clicking on the launch button, which you should see near the top right of the screen.
