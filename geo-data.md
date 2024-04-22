@@ -150,9 +150,10 @@ joined.plot(column='density', legend = True, figsize=(12,6))
 # joined.sort_values('density').tail()
 ```
 
-alternatively, we can use logarithmic scale for the color distribution, which will also change the way the colors appear. 
+alternatively, we can use logarithmic scale for the color distribution, which will also change the way the colors appear. For this we need to import another package, though
 
 ```{code-cell} ipython3
+import matplotlib
 joined.plot(column='density', legend=True,norm=matplotlib.colors.LogNorm(vmin=joined['density'].min(), vmax=joined['density'].max()), figsize=[9,6.5])
 ```
 

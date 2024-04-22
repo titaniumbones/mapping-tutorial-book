@@ -6,6 +6,6 @@ root: intro
 chapters:
 - file: getting-started
 - file: geo-data.md
-- file: bringing-together
+- file: bring-together
 # - file: notebooks
 # - file: markdown-notebooks
