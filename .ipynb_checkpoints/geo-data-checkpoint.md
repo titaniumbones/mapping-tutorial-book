@@ -121,10 +121,6 @@ joined.plot(column='2022 Population', legend=True, figsize=(10,6))
 
 ### A tiny bit of math (areas, density, and growth rates)
 
-:::{tip}
-This section is a little more technically detailed, and you won't really need most of it for the next lesson. You can skip this if it's hard to follow. 
-:::
-
 +++
 
 This is interesting. But what if the absolute value of the population isn't what we're interested in? For instance, what if we care more about population density?

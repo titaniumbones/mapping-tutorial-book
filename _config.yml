@@ -4,11 +4,11 @@
 title: Using Python and Jupyter Notebooks to build Maps
 author: Matt Price
 logo: logo.png
-
+exclude_patterns: [_build, Thumbs.db, .DS_Store, "*.ipynb"]
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
-  execute_notebooks: force
+  execute_notebooks: cache
 
 # Define the name of the latex output file for PDF builds
 latex:

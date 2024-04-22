@@ -4,3 +4,4 @@ numpy
 folium
 geopandas
 jupytext
+jenkspy

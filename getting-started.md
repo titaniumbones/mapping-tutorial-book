@@ -1,7 +1,7 @@
 ---
 jupytext:
   cell_metadata_filter: -all
-  formats: md:myst
+  formats: md:myst,ipynb,py:percent
   text_representation:
     extension: .md
     format_name: myst
@@ -19,11 +19,12 @@ This interface should (I hope!) allow you to get started with Python and mapping
 
 ## Imports: Build your toolbox
 
-Python is the most widely-used prgramming language for scientific computing, and has a wide variety of tools for working with data. We get access to those tools by `import` ing them into our project. I won'texplain every one of these tools in this tutorial; imagine, in stead, that you have just started an apprenticeship at an auto mechanic shop.  There are many tools in the building, but you will only learn to use a few of them at first. 
+Python is the most widely-used prgramming language for scientific computing, and has a wide variety of tools for working with data. We get access to those tools by `import` ing them into our project. I won'texplain every one of these tools in this tutorial; imagine, in stead, that you have just started an apprenticeship at an auto mechanic shop.  There are many tools in the building, but you will only learn to use a few of them at first.
 
-```{code-cell} 
+```{code-cell} ipython3
 import folium
 ```
+
 When we `import` a library, that library becomes available to us, and we can use its many attributes. A library generally provides a numbero f functions and objects (you can google to learn more about that that means) which you access using so-called "dot notation". These are often called the library's API. So for instance, folium has an API entrypoint called `Map`. Once the library is imported, we can access it by issuing the command
 
 ``` python
@@ -38,15 +39,16 @@ folium.Map()
 
 Making a map is almost trivially easy:
 
-```{code-cell}
+```{code-cell} ipython3
 sample_map = folium.Map()
 sample_map
 ```
+
 The first lines creates a "variable" called `sample_map` which is an "instance" of an object of class `folium.Map`. The second line, when issued as the final line in a Jupyter notebook cell like this one, will generate and display the map. 
 
 This map is perfectly functional.  However, we can customize it, and make it more useful, by "passing arguments" when we create it:
 
-```{code-cell}
+```{code-cell} ipython3
 sample_map = folium.Map(tiles='cartodbpositron',
                         location=[45.5019,-73.5674],
                         start_zoom=8
